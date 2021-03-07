@@ -5,7 +5,7 @@
 class appview :public QGraphicsView
 {
 public:
-    appview(QWidget *parent = 0);
+    appview(QWidget *parent = NULL);
 };
 
 #endif // APPVIEW_H

@@ -1,14 +1,26 @@
 #include "board.h"
-#include <iostream>
+#include <QGridLayout>
+#include <QWidget>
+#include "boardpiece.h"
+#include <QBoxLayout>
+#include "mainwindow.h"
+
+extern mainWindow *mi;
+
 board::board()
 {
-kolor = "";
-cout<<"Stworzono obiekt";
+
+
 }
-board::board(const board& wzor){
-    kolor = wzor.kolor;
+
+board::~board()
+{
+
 }
-void board::zapalona(int g){
-    kolor = "niebieski";
-    cout<< g;
+
+void board::createBoard()
+{
+    //QGridLayout *layout;
+
+
 }

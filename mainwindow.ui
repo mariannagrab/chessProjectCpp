@@ -14,14 +14,20 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>130</x>
       <y>70</y>
-      <width>104</width>
-      <height>87</height>
+      <width>511</width>
+      <height>411</height>
      </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>15000</width>
+      <height>15000</height>
+     </size>
     </property>
    </widget>
   </widget>
@@ -31,7 +37,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

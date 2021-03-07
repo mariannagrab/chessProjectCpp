@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>rookblack.png</file>
+        <file>rookwhite.png</file>
+    </qresource>
+</RCC>

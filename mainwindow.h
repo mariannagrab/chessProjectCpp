@@ -1,21 +1,31 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsItem>
+#include <QList>
+#include "board.h"
+#include "boardpiece.h"
+#include "figureset.h"
 
-#include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
+class mainWindow: public QGraphicsView
 {
     Q_OBJECT
+    board *chessBoard;
+    QGraphicsScene *scene;
+    boardPiece *rect[8][8];
+    figureSet *whites;
+    figureSet *blacks;
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    mainWindow(QWidget *parent =0);
+    ~mainWindow();
+    void addQItem(QGraphicsItem *item);
+    QGraphicsScene* getScene();
+    void createBoard();
+    void setStartPieces();
 
-private:
-    Ui::MainWindow *ui;
+
 };
+
 #endif // MAINWINDOW_H

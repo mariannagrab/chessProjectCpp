@@ -1,14 +1,15 @@
 #include "mainwindow.h"
-#include "board.h"
-#include "board.cpp"
 #include <QApplication>
-#include "appview.h"
+#include "boardpiece.h"
 
+
+
+mainWindow *mi;
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-appview app;
-app.show();
+    mi = new mainWindow();
+    mi ->show();
 
     return a.exec();
 }

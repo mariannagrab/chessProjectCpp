@@ -1,19 +1,22 @@
 #ifndef BOARD_H
 #define BOARD_H
-#include <cstdlib>
+#include "mainwindow.h"
+
+#include <QGraphicsItem>
+#include <QWidget>
 #include <string>
 using namespace std;
 
 class board
 {
+
 public:
-    string kolor;
     board();
-    board(const board& wzor);
     ~board();
-    void zapalona(int g);
+    void createBoard();
+
 private:
-    int zapalona2(int g);
+
 };
 
 #endif // BOARD_H

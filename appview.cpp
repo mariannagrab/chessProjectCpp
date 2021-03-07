@@ -7,7 +7,7 @@ appview::appview(QWidget *parent)
     setScene(appscene);
     QBrush brush;
         brush.setStyle(Qt::SolidPattern);
-        brush.setColor(Qt::black);
+        brush.setColor(Qt::gray);
         setBackgroundBrush(brush);
 
 }
